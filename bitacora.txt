@@ -1,0 +1,41 @@
+
+----PETICION HTTP----
+
+* GET
+http://127.0.0.1:5500/ (304) not-modified
+
+*Protocolo
+http://
+
+*Host
+127.0.0.1
+
+*puerto
+5500
+
+*ruta
+http://127.0.0.1:5500/
+
+*metodo
+GET
+
+*codigo de estado
+(304) not-modified
+
+----Ruta Inexistente-----
+
+* GET
+http://127.0.0.1:5500/home - Cannot GET /home
+
+404 Not Found -> Significa que no se pudo encontrar el recurso de la peticion 
+en este aso porque no existe.
+
+---Roles de cada parte de Rueda-Libre---
+
+html -> definir los elemntos de la pagina mediante etiquetas
+ejemplo: el titulo principal <h1>
+css-> definir los estilos visuales de los elementos creados en html
+ejemplo: la fuente de el titulo principal / font-family: sans
+js -> dar funcionabilidad a los elementos creados. 
+ejemplo: una accion al dar click en un boton / OnClick: "#"
+
