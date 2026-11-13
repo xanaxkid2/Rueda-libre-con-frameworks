@@ -143,3 +143,8 @@ Naranja Pedal
 Verde Ruta
 
 #114F31 · Enlaces con texto blanco o sobre fondo Crema.
+
+---- Style and computed - propiedades -----
+
+<p> hereda la propiedad : font-family: var(--fuente-textos);
+y no hereda : --color-naranja-pedal: #F7B97C;
