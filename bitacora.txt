@@ -148,3 +148,11 @@ Verde Ruta
 
 <p> hereda la propiedad : font-family: var(--fuente-textos);
 y no hereda : --color-naranja-pedal: #F7B97C;
+
+--problema class .active ---
+
+* causa del problema
+
+El selector #menu a tiene mayor especificidad que .active.
+Por eso, aunque el enlace tenga la clase activo, 
+el navegador prioriza el color gris del selector #menu a.

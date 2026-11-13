@@ -36,3 +36,39 @@ h1, h2, h3, h4, h5, h6 {
 p, a, button, input, select, textarea {
     font-family: var(--fuente-textos);
 }
+
+#menu a {
+    color: var(--color-gris-asfalto);
+    text-decoration: none;
+    
+}
+
+#menu a.activo {
+    color: var(--color-verde-ruta);
+    font-weight: 600;
+    
+}
+
+.btn-reservar {
+    display: inline-block;
+    padding: var(--espacio-sm) var(--espacio-lg);
+    background-color: var(--color-naranja-pedal);
+    font-family: var(--fuente-textos);
+    font-weight: 700;
+    border-radius: 8px;
+
+
+.btn-reservar:hover {
+    background-color: var(--color-azul-noche);
+    color: var(--color-crema);
+}
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: 1px solid var(--color-verde-ruta);
+    border-color: var(--color-verde-ruta);
+    box-shadow: 0 0 0 2px var(--color-crema);
+}
