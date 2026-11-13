@@ -50,3 +50,16 @@ ejemplo: una accion al dar click en un boton / OnClick: "#"
 mailto:hola@ruedalibre.example -> redirecciona a una vista blank con un modal que pregunta si quiere mandar un email
 
 #Encuentranos -> redirecciona un elemento previamente identificado con un id
+
+-----Justificacion formularios-----
+
+1. Correo electrónico (input type="email): Elegí este tipo porque permite validar que el usuario ingrese 
+una dirección de correo con un formato
+válido antes de enviar el formulario.
+
+2. Plan de alquiler (input type="radio"): Utilicé botones de opción porque el cliente solo puede 
+seleccionar un plan entre las tres alternativas disponibles.
+
+3. Aceptación de políticas (input type="checkbox"): Elegí una casilla de verificación porque permite que el usuario 
+confirme explícitamente que acepta las políticas de alquiler. 
+Además, con required se obliga a marcarla antes de enviar el formulario.

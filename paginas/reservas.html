@@ -20,7 +20,7 @@
 
         <a href="mailto:hola@ruedalibre.example">Contactanos</a>
 
-        <h3>Horarios de atencion</h3>
+        <h2>Horarios de atencion</h2>
 
     </header>
 
@@ -41,10 +41,89 @@
 
             </aside>
 
-
         </section>
 
+        <section>
 
+            <h2>Formulario de reserva</h2>
+
+            <form action="/reservar" method="POST">
+
+
+                <fieldset>
+                    <legend>Tus datos</legend>
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="documento">Número de documento:</label>
+                    <input type="text" id="documento" name="documento" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu alquiler</legend>
+
+                    <label for="fecha">Fecha del alquiler:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="bicicleta">Tipo de bicicleta:</label>
+                    <select id="bicicleta" name="bicicleta" required>
+                        <option value="">Selecciona una bicicleta</option>
+                        <option value="urbana">Urbana</option>
+                        <option value="montaña">Montaña</option>
+                        <option value="electrica">Eléctrica</option>
+                    </select>
+
+                    <p>Plan de alquiler:</p>
+
+                    <input type="radio" id="hora" name="plan" value="1 hora" required>
+                    <label for="hora">1 hora</label>
+
+                    <input type="radio" id="medio-dia" name="plan" value="medio dia">
+                    <label for="medio-dia">Medio día</label>
+
+                    <input type="radio" id="dia-completo" name="plan" value="dia completo">
+                    <label for="dia-completo">Día completo</label>
+
+                    <label for="cantidad">Cantidad de bicicletas:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+
+                    <label for="recorrido">Recorrido guiado:</label>
+                    <select id="recorrido" name="recorrido">
+                        <option value="ninguno">Ninguno</option>
+                        <option value="rio-parques">Río y Parques</option>
+                        <option value="sabores-barrio">Sabores de Barrio</option>
+                        <option value="las-palmas">Reto Las Palmas</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmación</legend>
+
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                    <input type="checkbox" id="politicas" name="politicas" value="aceptadas" required>
+
+                    <label for="politicas">
+                        Acepto las políticas de alquiler.
+                    </label>
+
+                </fieldset>
+
+                <button type="submit">Enviar solicitud</button>
+
+            </form>
+
+        </section>
 
     </main>
 
