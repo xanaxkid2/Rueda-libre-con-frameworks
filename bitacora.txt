@@ -39,3 +39,14 @@ ejemplo: la fuente de el titulo principal / font-family: sans
 js -> dar funcionabilidad a los elementos creados. 
 ejemplo: una accion al dar click en un boton / OnClick: "#"
 
+----Rutas utilizadas-----
+
+/index.html -> redirecciona al index 7 pagina home
+
+/paginas/tarifas.html -> redirecciona a la vista tarifas.html
+
+/paginas/reservas.html -> redirecciona  a la vista de reservas.html
+
+mailto:hola@ruedalibre.example -> redirecciona a una vista blank con un modal que pregunta si quiere mandar un email
+
+#Encuentranos -> redirecciona un elemento previamente identificado con un id
