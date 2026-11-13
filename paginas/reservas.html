@@ -54,16 +54,16 @@
                     <legend>Tus datos</legend>
 
                     <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" title="campo requerido">
 
                     <label for="documento">Número de documento:</label>
-                    <input type="text" id="documento" name="documento" required>
+                    <input type="number" id="documento" name="documento" required  minlength="6" maxlength="10" placeholder="Ej: 1025883572">
 
                     <label for="correo">Correo electrónico:</label>
                     <input type="email" id="correo" name="correo" required>
 
                     <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" required>
+                    <input type="tel" id="celular" name="celular " required maxlength="10"  pattern="3[0-9]{9} " placeholder="Ej: 30258867443">
 
                 </fieldset>
 
@@ -71,7 +71,7 @@
                     <legend>Tu alquiler</legend>
 
                     <label for="fecha">Fecha del alquiler:</label>
-                    <input type="date" id="fecha" name="fecha" required>
+                    <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-11-30">
 
                     <label for="bicicleta">Tipo de bicicleta:</label>
                     <select id="bicicleta" name="bicicleta" required>
@@ -93,7 +93,7 @@
                     <label for="dia-completo">Día completo</label>
 
                     <label for="cantidad">Cantidad de bicicletas:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="6" value="1" required>
 
                     <label for="recorrido">Recorrido guiado:</label>
                     <select id="recorrido" name="recorrido">
@@ -109,7 +109,7 @@
                     <legend>Confirmación</legend>
 
                     <label for="comentarios">Comentarios adicionales:</label>
-                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aqui..."></textarea>
 
                     <input type="checkbox" id="politicas" name="politicas" value="aceptadas" required>
 

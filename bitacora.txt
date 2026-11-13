@@ -63,3 +63,38 @@ seleccionar un plan entre las tres alternativas disponibles.
 3. Aceptación de políticas (input type="checkbox"): Elegí una casilla de verificación porque permite que el usuario 
 confirme explícitamente que acepta las políticas de alquiler. 
 Además, con required se obliga a marcarla antes de enviar el formulario.
+
+----Validacion nativa----
+
+1. Nombre completo	Campo vacío
+No permitir el envío (required)
+Prueba superada: el navegador solicita completar el campo.
+
+2. Número de documento Campo vacío	
+No permitir el envío
+Prueba superada: aparece mensaje de validación.
+
+3. Correo electrónico usuario123.com		
+Rechazar el formato incorrecto	
+Prueba superada: el navegador solicita un correo válido.
+
+4. Celular	2001234567	
+Rechazar porque no comienza por 3	
+Prueba superada: no permite enviar el formulario.
+
+5. Celular	30012345	
+Rechazar porque tiene menos de 10 dígitos
+Prueba superada: no cumple la longitud mínima.
+
+6. Fecha del alquiler	
+2026-10-30	Rechazar porque es anterior al 1 de noviembre
+Prueba superada: fecha fuera del rango permitido.
+
+7. Cantidad de bicicletas	0	
+Rechazar porque el mínimo permitido es 1	
+Prueba superada: no cumple el valor mínimo.
+
+8. políticas de alquiler	No marcar la casilla	
+o permitir el envío.	
+Prueba superada: se solicita aceptar las políticas.
+
