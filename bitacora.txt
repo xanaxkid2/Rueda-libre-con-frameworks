@@ -98,3 +98,48 @@ Prueba superada: no cumple el valor mínimo.
 o permitir el envío.	
 Prueba superada: se solicita aceptar las políticas.
 
+-----Evaluacion de contraste color de la pagina -----
+
+Después de evaluar las combinaciones de colores de Rueda Libre, se identificó que seis de las ocho combinaciones son aptas para texto normal y dos no cumplen los requisitos mínimos de contraste. Se determinó utilizar Azul Noche y Gris Asfalto para los textos, Crema y Verde Ruta para los fondos, y Naranja Pedal para destacar botones y elementos visuales, siempre acompañado de texto Azul Noche para garantizar una buena legibilidad.
+
+------mapa de uso de color-----
+
+Fondos principales
+
+Crema
+
+#FFFFFF · Fondo principal de las secciones.
+
+
+
+Verde Ruta
+
+#114F31 · Fondos secundarios y destacados.
+
+
+
+Textos
+
+Azul Noche
+
+#172A3A · Títulos y textos principales.
+
+
+
+Gris Asfalto
+
+#4A4A48 · Párrafos y textos secundarios.
+
+
+
+Botones y enlaces
+
+Naranja Pedal
+
+#F7B97C · Fondos de botones con texto Azul Noche.
+
+
+
+Verde Ruta
+
+#114F31 · Enlaces con texto blanco o sobre fondo Crema.
