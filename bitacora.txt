@@ -199,3 +199,17 @@ text-xl font-black uppercase
 shadow-[7px_7px_0px_#ffffff] -> la diferencia es que tailwind no tiene
  componente ya echos por lo que tube que yo mismo indicar borde , color , tipo de texto
  tipo ,sombra y color de texto.
+
+ --kit tailwind---
+
+Elemento ->	Regla
+Bordes ->	border-2 y border-4
+Radios ->	rounded-none (esquinas rectas)
+Espaciado -> pequeño	p-2, gap-2
+Espaciado -> medio	p-4, gap-4
+Espaciado -> grande	p-6, gap-6
+Azul noche ->	#172a3a
+Naranja pedal ->	#f7b97c
+Verde ruta ->	#114f31
+Gris asfalto ->	#4a4a48
+Naranja acento ->	#e26d23

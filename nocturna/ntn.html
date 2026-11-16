@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <body class="bg-[#172a3a] text-white">
+      <header class="border-b-4 border-[#f7b97c]">
+        <div class="w-full max-w-6xl mx-auto px-6">
+            <div class="max-w-6xl mx-auto px-6 py-5
+              flex flex-col md:flex-row
+              items-center justify-between gap-6">
+
+    <!-- LOGO -->
+    <a href="#inicio"
+       class="text-2xl md:text-3xl font-black uppercase
+              text-[#f7b97c] tracking-tighter">
+      Rueda <span class="text-white">Nocturna</span>
+    </a>
+
+    <!-- NAVEGACIÓN -->
+    <nav aria-label="Navegación principal">
+      <ul class="flex flex-wrap justify-center
+                 items-center gap-4 md:gap-6">
+
+        <li>
+          <a href="#inicio"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Inicio
+          </a>
+        </li>
+
+        <li>
+          <a href="#rutas"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Rutas
+          </a>
+        </li>
+
+        <li>
+          <a href="#informacion"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Información
+          </a>
+        </li>
+
+        <li>
+          <a href="#contacto"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Contacto
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- BOTÓN -->
+    <a href="#inscripcion"
+       class="bg-[#f7b97c] text-[#172a3a]
+              border-2 border-white
+              px-5 py-3 font-black uppercase
+              shadow-[5px_5px_0px_#114f31]
+              hover:shadow-[2px_2px_0px_#114f31]
+              hover:translate-x-[3px]
+              hover:translate-y-[3px]
+              transition-all duration-200">
+      Inscríbete →
+    </a>
+
+  </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="inicio">
+          <div class="w-full max-w-6xl mx-auto px-6">
+             <section
+      class="bg-[#172a3a] text-white px-6 py-20 md:px-16 md:py-28 text-3xl text-center "
+    >
+      <div
+        class="max-w-6xl mx-auto border-4 border-[#f7b97c] bg-[#e26d23] p-8 md:p-14 shadow-[12px_12px_0px_#f7b97c]"
+      >
+        <p
+          class="inline-block bg-[#f7b97c] text-[#172a3a] border-2 border-[#172a3a] px-4 py-2 font-black uppercase tracking-wider mb-8"
+        >
+          Nuevo · Jueves a sábado
+        </p>
+
+        <h1
+          class="text-5xl md:text-8xl font-black uppercase tracking-tighter text-[#ffffff] mb-6"
+        >
+          Rueda<br />
+          Nocturna
+        </h1>
+
+        <p
+          class="text-lg md:text-2xl font-bold max-w-2xl mx-auto text-white mb-10 text-center"
+        >
+          Descubre Medellín en bici cuando se encienden las luces.
+        </p>
+
+        <ul class="flex flex-wrap gap-4 mb-10 justify-center">
+          <li
+            class="bg-white text-[#172a3a] border-2 border-[#172a3a] px-5 py-3 font-black shadow-[4px_4px_0px_#f7b97c] text-center"
+          >
+            3 RUTAS
+          </li>
+
+          <li
+            class="bg-[#f7b97c] text-[#172a3a] border-2 border-[#172a3a] px-5 py-3 font-black shadow-[4px_4px_0px_#ffffff]"
+          >
+            DESDE $55.000
+          </li>
+        </ul>
+
+        <a
+          href="#inscripcion"
+          class="inline-block bg-[#f7b97c] text-[#172a3a] border-4 border-[#172a3a] px-8 py-4 text-xl font-black uppercase shadow-[7px_7px_0px_#ffffff]"
+        >
+          Inscribirse
+        </a>
+      </div>
+    </section>
+          </div>
+        </section>
+
+        <section id="rutas">
+          <div class="w-full max-w-6xl mx-auto px-6">
+             <section id="rutas" class="bg-[#172a3a] px-6 py-16 md:px-12 mt-6">
+      <div class="max-w-6xl mx-auto mb-6">
+        <h2
+          class="text-5xl md:text-7xl font-black uppercase text-white mb-12 text-center"
+        >
+          Nuestras rutas
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 ">
+          <!-- CARD 1 -->
+          <article
+            class="bg-white text-[#172a3a] border-4 border-[#f7b97c] shadow-[10px_10px_0px_#f7b97c] overflow-hidden  transition-all duration-300
+                hover:border-[#e26d23]
+                hover:shadow-[14px_14px_0px_#e26d23]" 
+          >
+            <img
+              src="/img/hero-nocturno.png"
+              alt="Luces nocturnas del centro de Medellín"
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-3xl font-black uppercase mb-6">
+                Luces del Centro
+              </h3>
+
+              <ul class="space-y-4">
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500"
+                    >Distancia</span
+                  >
+                  <span class="font-black">10 km</span>
+                </li>
+
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500"
+                    >Duración</span
+                  >
+                  <span class="font-black">2 h</span>
+                </li>
+
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500">Nivel</span>
+                  <span class="font-black bg-[#4ca278] p-2">Fácil</span>
+                </li>
+              </ul>
+
+              <div
+                class="mt-6 bg-[#f7b97c] border-2 border-[#172a3a] shadow-[5px_5px_0px_#172a3a] p-4 text-center"
+              >
+                <p class="text-3xl font-black">$55.000</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: MIRADORES DE LA CIUDAD -->
+          <article
+            class="bg-white text-[#172a3a] border-4 border-[#f7b97c] shadow-[10px_10px_0px_#f7b97c] overflow-hidden  transition-all duration-300
+                hover:border-[#e26d23]
+                hover:shadow-[14px_14px_0px_#e26d23]"
+          >
+            <img
+              src="/img/card2.png"
+              alt="Miradores nocturnos de Medellín"
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-3xl font-black uppercase mb-6">
+                Miradores de la Ciudad
+              </h3>
+
+              <ul class="space-y-4">
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500"
+                    >Distancia</span
+                  >
+                  <span class="font-black">16 km</span>
+                </li>
+
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500"
+                    >Duración</span
+                  >
+                  <span class="font-black">3 h</span>
+                </li>
+
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500">Nivel</span>
+                  <span class="font-black bg-[#f7b97c] p-2">Medio</span>
+                </li>
+              </ul>
+
+              <div
+                class="mt-6 bg-[#f7b97c] border-2 border-[#172a3a] shadow-[5px_5px_0px_#172a3a] p-4 text-center"
+              >
+                <p class="text-3xl font-black">$75.000</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: LUNA EN LAS PALMAS -->
+          <article
+            class="bg-white text-[#172a3a] border-4 border-[#f7b97c] shadow-[10px_10px_0px_#f7b97c] overflow-hidden  transition-all duration-300
+                hover:border-[#e26d23]
+                hover:shadow-[14px_14px_0px_#e26d23]"
+          >
+            <img
+              src="/img/card3.png"
+              alt="Carretera de Las Palmas iluminada durante la noche"
+              class="w-full h-56 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-3xl font-black uppercase mb-6">
+                Luna en Las Palmas
+              </h3>
+
+              <ul class="space-y-4">
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500"
+                    >Distancia</span
+                  >
+                  <span class="font-black">22 km</span>
+                </li>
+
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500"
+                    >Duración</span
+                  >
+                  <span class="font-black">3,5 h</span>
+                </li>
+
+                <li
+                  class="flex justify-between border-b-2 border-slate-200 pb-3"
+                >
+                  <span class="font-bold uppercase text-slate-500">Nivel</span>
+                  <span class="font-black bg-[#e26d23] p-2">Difícil</span>
+                </li>
+              </ul>
+
+              <div
+                class="mt-6 bg-[#f7b97c] border-2 border-[#172a3a] shadow-[5px_5px_0px_#172a3a] p-4 text-center"
+              >
+                <p class="text-3xl font-black">$95.000</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+          </div>
+        </section>
+
+        <section id="informacion">
+          <div class="w-full max-w-6xl mx-auto px-6"></div>
+        </section>
+
+        <section id="inscripcion">
+          <div class="w-full max-w-6xl mx-auto px-6"></div>
+        </section>
+      </main>
+
+      <footer id="contacto">
+        
+            
+<footer id="contacto"
+        class="bg-[#114f31] border-t-4 border-[#f7b97c] py-12">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    
+    <div class="flex flex-col md:flex-row
+                justify-between items-start gap-10">
+
+      
+      <div class="flex-1">
+        <h2 class="text-3xl font-black uppercase text-[#f7b97c]">
+          Rueda Nocturna
+        </h2>
+        <p class="text-white mt-3 max-w-xs">
+          Medellín se vive mejor sobre ruedas.
+          Descubre la ciudad bajo las estrellas.
+        </p>
+      </div>
+
+      
+      <div class="flex-1">
+        <h3 class="text-xl font-black uppercase text-[#f7b97c] mb-4">
+          Explora
+        </h3>
+
+        <ul class="space-y-3 text-white font-bold">
+          <li><a href="#inicio" class="hover:text-[#f7b97c]">Inicio</a></li>
+          <li><a href="#rutas" class="hover:text-[#f7b97c]">Rutas</a></li>
+          <li><a href="#informacion" class="hover:text-[#f7b97c]">Información</a></li>
+          <li><a href="#inscripcion" class="hover:text-[#f7b97c]">Inscripción</a></li>
+        </ul>
+      </div>
+
+      <!-- BLOQUE 3: CONTACTO -->
+      <div class="flex-1">
+        <h3 class="text-xl font-black uppercase text-[#f7b97c] mb-4">
+          Contacto
+        </h3>
+
+        <ul class="space-y-3 text-white">
+          <li>Correo: contacto@ruedanocturna.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+</footer>
+
+        </div>
+      </footer>
+    </body>
+  </body>
+</html>

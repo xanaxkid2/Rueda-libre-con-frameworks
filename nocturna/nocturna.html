@@ -3,15 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rueda Nocturna</title>
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
-  <body class="p-6">
+  <body>
+    <body class="bg-[#172a3a] text-white">
+      <header class="border-b-4 border-[#f7b97c]">
+        <div class="w-full max-w-6xl mx-auto px-6">
+            <div class="max-w-6xl mx-auto px-6 py-5
+              flex flex-col md:flex-row
+              items-center justify-between gap-6">
 
     
+    <a href="#inicio"
+       class="text-2xl md:text-3xl font-black uppercase
+              text-[#f7b97c] tracking-tighter">
+      Rueda Nocturna</span>
+    </a>
 
-    <section
+    <nav aria-label="Navegación principal">
+      <ul class="flex flex-wrap justify-center
+                 items-center gap-4 md:gap-6">
+
+        <li>
+          <a href="#inicio"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Inicio
+          </a>
+        </li>
+
+        <li>
+          <a href="#rutas"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Rutas
+          </a>
+        </li>
+
+        <li>
+          <a href="#informacion"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Información
+          </a>
+        </li>
+
+        <li>
+          <a href="#contacto"
+             class="font-bold uppercase text-sm
+                    hover:text-[#f7b97c]
+                    transition-colors">
+            Contacto
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <a href="#inscripcion"
+       class="bg-[#f7b97c] text-[#172a3a]
+              border-2 border-white
+              px-5 py-3 font-black uppercase
+              shadow-[5px_5px_0px_#114f31]
+              hover:shadow-[2px_2px_0px_#114f31]
+              hover:translate-x-[3px]
+              hover:translate-y-[3px]
+              transition-all duration-200">
+      Inscribete 
+    </a>
+
+  </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="inicio">
+          <div class="w-full max-w-6xl mx-auto px-6">
+             <section
       class="bg-[#172a3a] text-white px-6 py-20 md:px-16 md:py-28 text-3xl text-center "
     >
       <div
@@ -50,16 +122,32 @@
           </li>
         </ul>
 
-        <a
-          href="#inscripcion"
-          class="inline-block bg-[#f7b97c] text-[#172a3a] border-4 border-[#172a3a] px-8 py-4 text-xl font-black uppercase shadow-[7px_7px_0px_#ffffff]"
-        >
-          Inscribirse
-        </a>
+        <a href="#inscripcion"
+        class="inline-block bg-[#f7b97c] text-[#172a3a]
+          border-4 border-[#172a3a] px-8 py-4
+          font-black text-lg uppercase
+          m-6
+          shadow-[7px_7px_0px_#114f31]
+          hover:translate-x-1 hover:translate-y-1
+          hover:shadow-[3px_3px_0px_#114f31]
+          hover:bg-[#e26d23]
+          focus-visible:outline-none
+          focus-visible:ring-4
+          focus-visible:ring-[#ffffff]
+          focus-visible:ring-offset-4
+          focus-visible:ring-offset-[#172a3a]
+          transition-all duration-200">
+    Inscribete 
+</a>
+
       </div>
     </section>
+          </div>
+        </section>
 
-    <section id="rutas" class="bg-[#172a3a] px-6 py-16 md:px-12 mt-6">
+        <section id="rutas">
+          <div class="w-full max-w-6xl mx-auto px-6">
+             <section id="rutas" class="bg-[#172a3a] px-6 py-16 md:px-12 mt-6">
       <div class="max-w-6xl mx-auto mb-6">
         <h2
           class="text-5xl md:text-7xl font-black uppercase text-white mb-12 text-center"
@@ -226,7 +314,73 @@
         </div>
       </div>
     </section>
+          </div>
+        </section>
 
-    <a href="/index.html">index</a>
+        <section id="informacion">
+          <div class="w-full max-w-6xl mx-auto px-6"></div>
+        </section>
+
+        <section id="inscripcion">
+          <div class="w-full max-w-6xl mx-auto px-6"></div>
+        </section>
+      </main>
+
+      <footer id="contacto">
+        
+            
+<footer id="contacto"
+        class="bg-[#114f31] border-t-4 border-[#f7b97c] py-12">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    
+    <div class="flex flex-col md:flex-row
+                justify-between items-start gap-10">
+
+      
+      <div class="flex-1">
+        <h2 class="text-3xl font-black uppercase text-[#f7b97c]">
+          Rueda Nocturna
+        </h2>
+        <p class="text-white mt-3 max-w-xs">
+          Medellín se vive mejor sobre ruedas.
+          Descubre la ciudad bajo las estrellas.
+        </p>
+      </div>
+
+      
+      <div class="flex-1">
+        <h3 class="text-xl font-black uppercase text-[#f7b97c] mb-4">
+          Explora
+        </h3>
+
+        <ul class="space-y-3 text-white font-bold">
+          <li><a href="#inicio" class="hover:text-[#f7b97c]">Inicio</a></li>
+          <li><a href="#rutas" class="hover:text-[#f7b97c]">Rutas</a></li>
+          <li><a href="#informacion" class="hover:text-[#f7b97c]">Información</a></li>
+          <li><a href="#inscripcion" class="hover:text-[#f7b97c]">Inscripción</a></li>
+        </ul>
+      </div>
+
+      <!-- BLOQUE 3: CONTACTO -->
+      <div class="flex-1">
+        <h3 class="text-xl font-black uppercase text-[#f7b97c] mb-4">
+          Contacto
+        </h3>
+
+        <ul class="space-y-3 text-white">
+          <li>Correo: contacto@ruedanocturna.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+</footer>
+
+        </div>
+      </footer>
+    </body>
   </body>
 </html>
