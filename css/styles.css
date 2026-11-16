@@ -205,16 +205,16 @@ main {
 }
 
 .hero {
-  background-image: url("/img/hero.png");
+  background-image: url("../img/hero.png");
   padding: 0;
 }
 
 .hero-tarifas {
-  background-image: url("/img/hero-tarifas.png");
+  background-image: url("../img/hero-tarifas.png");
 }
 
 .hero-reservas {
-  background-image: url("/img/heroe.png");
+  background-image: url("../img/heroe.png");
 }
 
 .hero-reservas h1 {
