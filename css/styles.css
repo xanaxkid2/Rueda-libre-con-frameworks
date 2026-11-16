@@ -570,8 +570,6 @@ main {
   height: 18px;
   cursor: pointer;
 }
-
-
 /* ==========================================================================
    12. COMPONENTES GLOBALES: WHATSAPP FLOTANTE Y PIE DE PÁGINA
    ========================================================================== */
@@ -609,6 +607,8 @@ main {
   background-color: black;
   color: var(--color-crema);
   margin-top: 20px;
+  position: relative;
+  overflow: visible;
 }
 
 .footer-display a {
@@ -744,7 +744,6 @@ main {
     z-index: 10;
 }
 
-
 /* Precio de cada bicicleta */
 .flota-section .precio-card {
     margin-top: auto;
@@ -784,8 +783,6 @@ main {
     min-height: 3.5rem;
 }
 
-
-
 /* ==========================================================================
    13. DISEÑO RESPONSIVE · MOBILE FIRST
    Los estilos anteriores son la versión móvil.
@@ -794,7 +791,7 @@ main {
 
 /* TABLET: 768 px en adelante */
 @media (min-width: 768px) {
-  /* Encabezado */
+  
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -807,7 +804,6 @@ main {
     gap: 1.25rem;
   }
 
-  /* Portada */
   .hero,
   .hero-tarifas,
   .hero-reservas {
@@ -826,7 +822,7 @@ main {
     flex: 1 1 calc(50% - 2rem);
   }
 
-  /* Bloque de información de rutas */
+
   .card-info {
     flex-direction: row;
     align-items: center;
@@ -854,7 +850,7 @@ main {
     flex: 1;
   }
 
-  /* Pie de página */
+
   .footer-display {
     flex-direction: row;
     justify-content: space-between;
@@ -867,7 +863,6 @@ main {
   }
 }
 
-/* ESCRITORIO: 1200 px en adelante */
 @media (min-width: 1200px) {
   main {
     padding-inline: 1.5rem;
@@ -880,7 +875,6 @@ main {
     min-height: 88vh;
   }
 
-  /* Galerías con más espacio entre tarjetas */
   .cards-container {
     gap: 3rem;
   }
@@ -898,7 +892,7 @@ main {
     gap: 2rem;
   }
 
-  /* Sección quiénes somos */
+
   .cards-display-quienes {
     gap: 6rem;
     padding: 4rem;
@@ -924,3 +918,188 @@ main {
     padding: 3rem;
   }
 }
+
+/* ==========================================
+   ¿POR QUÉ RUEDA LIBRE?
+========================================== */
+
+.titulo-beneficios {
+    font-family: display;
+    color: var(--color-azul-noche);
+}
+
+.beneficio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: var(--color-crema);
+    border: 2px solid var(--color-azul-noche);
+    box-shadow: 7px 7px 0 var(--color-azul-noche);
+
+}
+
+
+.beneficio-dato {
+    font-family: display;
+    color: var(--color-verde-ruta);
+}
+
+.beneficio-card h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-azul-noche);
+}
+
+.beneficio-card p {
+    font-family: var(--fuente-textos);
+    line-height: 1.7;
+}
+
+.beneficio-destacado {
+    display: inline-block;
+    padding: 0.6rem 0.8rem;
+
+    background-color: var(--color-naranja-pedal);
+    border: 2px solid var(--color-azul-noche);
+
+    color: var(--color-azul-noche);
+    font-family: var(--fuente-titulos);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================
+   FRANJA FINAL: ¿LISTO PARA RODAR?
+========================================== */
+
+.cta-rodar {
+    background-color: var(--color-naranja-pedal);
+    color: black;
+}
+
+.cta-rodar h2 {
+    font-family: display;
+}
+
+.btn-cta-reserva {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+
+    background-color: var(--color-azul-noche);
+    color: var(--color-crema);
+
+    border: 2px solid var(--color-crema);
+    box-shadow: 6px 6px 0 var(--color-azul-noche);
+
+    font-family: display;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.mapa-container {
+    width: 100%;
+    border: 3px solid var(--color-azul-noche);
+    box-shadow: 10px 10px 0 var(--color-azul-noche);
+    overflow: hidden;
+}
+
+.mapa-container iframe {
+    display: flex;
+    width: 80vh;
+    height: 350px;
+}
+
+.btn-mapa {
+    display: inline-block;
+    padding: 30px;
+    background-color: var(--color-naranja-pedal);
+    color: var(--color-azul-noche);
+    border: 2px solid var(--color-azul-noche);
+    box-shadow: 5px 5px 0 var(--color-azul-noche);
+    font-family: display;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-mascota {
+    position: absolute;
+    width: 160px;
+    height: auto;
+
+    top: -66px;
+    right: 15px;
+
+    z-index: 10;
+    object-fit: contain;
+}
+
+.promociones-section {
+    padding: 2rem 1rem;
+    background-color: var(--color-naranja-acento);
+    margin-top: 20px;
+}
+
+.promociones-section .container {
+    max-width: 90vh;
+}
+
+.promo-card {
+    min-height: 230px;
+    padding: 2rem 4rem;
+    background-color: var(--color-naranja-pedal);
+    color: var(--color-azul-noche);
+    border: 3px solid var(--color-azul-noche);
+    box-shadow: 8px 8px 0 var(--color-azul-noche);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+}
+
+.promo-etiqueta {
+    padding: 0.4rem 0.8rem;
+    background-color: var(--color-verde-ruta);
+    color: var(--color-crema);
+    font-family: var(--fuente-titulos);
+    font-size: 0.75rem;
+    font-weight: 800;
+    
+}
+
+.promo-card h2 {
+    margin: 0;
+    font-family: display;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    
+}
+
+.promo-card p {
+    max-width: 550px;
+    margin: 0;
+    font-family: var(--fuente-textos);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.promo-descuento {
+    font-family: display;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    color: var(--color-verde-ruta);
+}
+
+.promociones-section .carousel-indicators {
+    bottom: -35px;
+}
+
+.promociones-section .carousel-indicators button {
+    background-color: var(--color-azul-noche);
+    height: 6px;
+}
+
+

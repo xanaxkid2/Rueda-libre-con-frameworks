@@ -169,3 +169,20 @@ se puede mejorar el orden y algunos margenes que quedaron extraños.
 Al estrechar las margenes de ambos elementos puede notar como los elementos 
 contenidos dentro de estos se ajustan en tamaño y disposicion en la pantalla
 en respuesta al ancho de pantalla disponible sin perder el sentido o estilo inicial.
+
+---comparacion bootstrap vs css puro ----
+
+En mi opinion trabajar con bootstrap facilita enormemente el tiempo y
+cantidad de codigo en un proyecto , ya que sus clases predefinidas
+agilizan el diseño en un mismo archivo html asi como otorgan el diseño
+responsive que adapta la vista de manera proporcional y ordenada en cualquier
+dispositivo , como punto negativo customizar los estilos bases(que son bastante
+genericos en mi opinion) es algo 
+complicado y me surgieron incopativilidades en alguntos contenidos.
+
+ejemplo: al tratar de modifcar la fuente despues de agregar el cdn , bs obligaba
+a ignorar mi regla de font face , por lo que tube que forzar manualmente el font family 
+donde lo requeria .
+
+sin embargo es un framework que agiliza en gran parte la contruccion
+y diseño web.
