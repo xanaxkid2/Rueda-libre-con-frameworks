@@ -173,6 +173,15 @@ main {
   border-radius: 8px;
 }
 
+#menu a.btn-nocturna {
+  display: inline-block;
+  padding: var(--espacio-sm) var(--espacio-lg);
+  background-color: var(--color-azul-noche);
+  color: var(--color-crema);
+  font-weight: 700;
+  border-radius: 8px;
+}
+
 #menu a.btn-reservar:hover,
 #menu a.btn-reservar.activo {
   background-color: var(--color-azul-noche);
