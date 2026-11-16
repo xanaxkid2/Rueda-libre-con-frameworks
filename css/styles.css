@@ -607,3 +607,51 @@ main {
   text-decoration: none;
   color: var(--color-naranja-pedal);
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.nombre-negocio {
+    font-family: display;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-azul-noche);
+    text-decoration: none;
+}
+
+.footer-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    gap: 2rem;
+
+    padding: 3rem;
+    background-color: black;
+    color: var(--color-crema);
+    margin-top: 20px;
+}
+
+.footer-display h3,
+.footer-display h4 {
+    margin-top: 0;
+    font-family: display;
+    font-size: large;
+}
+
+.footer-display a {
+    display: block;
+    margin-bottom: 0.7rem;
+    text-decoration: none;
+    color: var(--color-naranja-pedal);
+}
+
+.footer-display p {
+    line-height: 1.6;
+}

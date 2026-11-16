@@ -163,3 +163,9 @@ se aplicaron estilos a todos los componentes y contenedores de la web
 se corrigieron los margenes , posicion , padding , tamaño y forma de 
 varios elementos , se le dio el "Sello de marca " buscado por el cliente.
 se puede mejorar el orden y algunos margenes que quedaron extraños.
+
+--Resposive en el menu y en el footer------
+
+Al estrechar las margenes de ambos elementos puede notar como los elementos 
+contenidos dentro de estos se ajustan en tamaño y disposicion en la pantalla
+en respuesta al ancho de pantalla disponible sin perder el sentido o estilo inicial.
