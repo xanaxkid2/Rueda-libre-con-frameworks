@@ -11,8 +11,8 @@ El diseño busca ofrecer una experiencia visual atractiva, sencilla y fácil de 
 
 ## 🌐 Enlaces publicados
 
-- **Sitio web:** [Agregar enlace de la página publicada]
-- **Repositorio GitHub:** [[https://github.com/xanaxkid2/Rueda-libre-con-frameworks.git](https://github.com/xanaxkid2/Rueda-libre-con-frameworks.git)]
+- **Sitio web:** (https://xanaxkid2.github.io/Rueda-libre-con-frameworks/index.html)
+- **Repositorio GitHub:** [[https://github.com/xanaxkid2/Rueda-libre-con-frameworks.git]
 
 ## 📄 Páginas del proyecto
 
