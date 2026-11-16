@@ -1,3 +1,24 @@
+/* ==========================================================================
+   RUEDA LIBRE · styles.css
+   --------------------------------------------------------------------------
+   1. Variables
+   2. Fuentes
+   3. Reset y base tipográfica
+   4. Estructura de página
+   5. Encabezado: menú y hero
+   6. Títulos de sección
+   7. Botones
+   8. Superficies con borde y sombra
+   9. Inicio: cards, quiénes somos y etiqueta "nuevo"
+   10. Tarifas y rutas: tablas y bloques informativos
+   11. Reservas: horarios y formulario
+   12. Componentes globales: WhatsApp flotante y pie de página
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. VARIABLES
+   ========================================================================== */
 :root {
   /* Colores */
   --color-crema: #ffffff;
@@ -13,85 +34,35 @@
   --fuente-textos: "Open Sans", sans-serif;
 
   /* Espaciado */
+  --espacio-sm: 0.5rem;
   --espacio-md: 1rem;
   --espacio-lg: 1.5rem;
   --espacio-xl: 2rem;
   --espacio-2xl: 3rem;
 }
 
+
+/* ==========================================================================
+   2. FUENTES
+   ========================================================================== */
 @font-face {
-    font-family: display;
-    src: url(/fonts/diplay.ttf); 
+  font-family: display;
+  src: url(/fonts/diplay.ttf);
 }
 
 @font-face {
-    font-family: p;
-    src: url(/fonts/parrafos.ttf);
+  font-family: p;
+  src: url(/fonts/parrafos.ttf);
 }
 
+
+/* ==========================================================================
+   3. RESET Y BASE TIPOGRÁFICA
+   ========================================================================== */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-main {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.hero {
-  background-image: url("/img/hero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  min-height: 88vh;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
-
-.hero-tarifas{
-    background-image: url("/img/hero-tarifas.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  min-height: 88vh;
-  
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-}
-
-.hero-reservas{
-    background-image: url("/img/heroe.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  min-height: 88vh;
-  
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
 }
 
 body {
@@ -107,25 +78,66 @@ h6 {
   font-weight: 700;
 }
 
-.cards-display-titles h3 {
-  font-size: clamp(3rem, 6vw, 6rem);
-  font-weight: 800;
-  text-align: center;
-  margin: 0;
-  line-height: 1;
+h3 {
+  font-family: display;
+  font-size: larger;
+}
+
+p {
+  font-family: p;
 }
 
 
-a,
 input,
 select,
 textarea {
   font-family: var(--fuente-textos);
 }
 
-p{
-    font-family: p;
+
+/* ==========================================================================
+   4. ESTRUCTURA DE PÁGINA
+   ========================================================================== */
+main {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
+
+
+.cards-display,
+.cards-display-quienes,
+.cards-display-titles,
+.formulario-section {
+  display: flex;
+  margin-top: 20px;
+}
+
+.cards-display,
+.cards-display-titles,
+.formulario-section {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-display {
+  gap: 6rem;
+  padding: 4rem 1rem;
+  background-color: var(--color-naranja-acento);
+}
+
+.cards-display-quienes {
+  align-items: center;
+  gap: 6rem;
+  padding: 60px;
+  background-color: var(--color-naranja-acento);
+}
+
+
+/* ==========================================================================
+   5. ENCABEZADO: MENÚ Y HERO
+   ========================================================================== */
+
 
 #menu {
   display: flex;
@@ -144,62 +156,137 @@ p{
   font-weight: 600;
 }
 
-.btn-reservar {
+
+#menu a.btn-reservar {
   display: inline-block;
   padding: var(--espacio-sm) var(--espacio-lg);
   background-color: var(--color-naranja-pedal);
-  font-family: var(--fuente-textos);
+  color: var(--color-azul-noche);
   font-weight: 700;
   border-radius: 8px;
-
-  .btn-reservar:hover {
-    background-color: var(--color-azul-noche);
-    color: var(--color-crema);
-  }
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 1px solid var(--color-verde-ruta);
-  border-color: var(--color-verde-ruta);
-  box-shadow: 0 0 0 2px var(--color-crema);
+#menu a.btn-reservar:hover,
+#menu a.btn-reservar.activo {
+  background-color: var(--color-azul-noche);
+  color: var(--color-crema);
 }
 
-.cards-display {
+
+.hero-tarifas,
+.hero-reservas,
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 88vh;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 6rem;
-  padding: 4rem 1rem;
-  background-color: var(--color-naranja-acento);
-  margin-top: 20px;
+  text-align: center;
 }
 
-.cards-display-quienes {
-  display: flex;
-  align-items: center;
-  gap: 6rem;
-  padding: 60px;
-  background-color: var(--color-naranja-acento);
-  margin-top: 20px;
+.hero {
+  background-image: url("/img/hero.png");
+  padding: 0;
 }
 
+.hero-tarifas {
+  background-image: url("/img/hero-tarifas.png");
+}
+
+.hero-reservas {
+  background-image: url("/img/heroe.png");
+}
+
+.hero-reservas h1 {
+  font-family: display;
+}
+
+
+/* ==========================================================================
+   6. TÍTULOS DE SECCIÓN
+   ========================================================================== */
 .cards-display-titles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6rem;
   background-color: var(--color-naranja-cicla);
-  margin-top: 20px;
   padding: 40px;
 }
 
-h3{
-    font-family: display;
-    font-size: larger;
+.cards-display-titles h3 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
 }
 
+
+/* ==========================================================================
+   7. BOTONES
+   ========================================================================== */
+.btn-cards,
+.btn-info,
+.formulario-reserva button {
+  display: inline-block;
+  padding: 1.2rem 1.5rem;
+
+  background-color: var(--color-naranja-pedal);
+  color: var(--color-azul-noche);
+  border: 2px solid var(--color-azul-noche);
+  box-shadow: 4px 4px 0 var(--color-azul-noche);
+
+  font-family: display;
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-cards:hover,
+.btn-info:hover,
+.formulario-reserva button:hover {
+  background-color: var(--color-azul-noche);
+  color: var(--color-crema);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--color-azul-noche);
+}
+
+.btn-cards {
+  margin: 20px;
+}
+
+.btn-info {
+  margin-left: 300px;
+}
+
+
+/* ==========================================================================
+   8. SUPERFICIES CON BORDE Y SOMBRA
+   ========================================================================== */
+.card,
+.card-quienes,
+.card-mascota {
+  box-shadow: 8px 8px 0 var(--color-azul-noche);
+  overflow: hidden;
+}
+
+.tabla-tarifas,
+.card-info,
+.card-horarios {
+  border: 2px solid var(--color-azul-noche);
+  box-shadow: 10px 10px 0 var(--color-azul-noche);
+}
+
+
+/* ==========================================================================
+   9. INICIO: CARDS, QUIÉNES SOMOS Y ETIQUETA "NUEVO"
+   ========================================================================== */
 .cards-container {
   display: flex;
   flex-direction: row;
@@ -209,40 +296,17 @@ h3{
   width: 100%;
 }
 
+.card,
+.card-quienes {
+  background-color: var(--color-crema);
+  border: 1px solid var(--color-azul-noche);
+  text-align: center;
+}
+
 .card {
   flex: 1;
   max-width: 500px;
   min-height: 550px;
-
-  background-color: var(--color-crema);
-  border: 1px solid var(--color-azul-noche);
-  border-radius: 0;
-
-  box-shadow: 8px 8px 0 var(--color-azul-noche);
-
-  overflow: hidden;
-  text-align: center;
-  
-}
-
-.quienes-container {
-  margin-top: var(--espacio-md);
-  display: flex;
-}
-
-.card-quienes {
-  height: 60%;
-  background-color: var(--color-crema);
-  border: 1px solid;
-
-  box-shadow: 8px 8px 0 var(--color-azul-noche);
-
-  overflow: hidden;
-  text-align: center;
-}
-
-.card-quienes p {
-  padding: 60px;
 }
 
 .card-img {
@@ -262,26 +326,14 @@ h3{
   line-height: 1.7;
 }
 
-.footer-display{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    background-color: black;
-    color: var(--color-crema);
-    margin-top: 20px;
-}
-
-.footer-display a{
-    text-decoration: none;
-    color: var(--color-naranja-pedal);
+.card-quienes p {
+  padding: 60px;
 }
 
 .card-mascota {
   flex: 1;
   min-width: 250px;
   max-width: 320px;
- height: auto;
 
   display: flex;
   justify-content: center;
@@ -289,9 +341,6 @@ h3{
 
   background-color: var(--color-naranja-pedal);
   border: 2px solid var(--color-azul-noche);
-  box-shadow: 8px 8px 0 var(--color-azul-noche);
-
-  overflow: hidden;
 }
 
 .card-mascota img {
@@ -301,279 +350,260 @@ h3{
   object-fit: contain;
   object-position: bottom;
 }
-.btn-cards{
-    background-color: var(--color-naranja-pedal);
-   
-   
-    
-    font-family: display;
-    font-size: large;
-    margin: 20px;
-    padding: 24px;
-    align-items: center;
-    justify-content: center;
+
+.card-electrica {
+  position: relative;
+}
+
+.etiqueta-nuevo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+
+  padding: 10px 18px;
+
+  background-color: var(--color-azul-noche);
+  color: var(--color-crema);
+
+  border: 2px solid var(--color-azul-noche);
+  box-shadow: 4px 4px 0 var(--color-azul-noche);
+
+  font-family: var(--fuente-titulos);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 
-.seccion-tablas {
-    padding: 3rem 1.5rem;
-    gap: 3rem;
-    overflow-x: auto;
-}
+/* ==========================================================================
+   10. TARIFAS Y RUTAS: TABLAS Y BLOQUES INFORMATIVOS
+   ========================================================================== */
 
-
+/* --- Tablas (precios y rutas comparten estilo) --- */
 .tabla-tarifas {
-    width: 100%;
-    max-width: 1000px;
-    border-collapse: collapse;
-    background-color: var(--color-crema);
-
-    border: 2px solid var(--color-azul-noche);
-    box-shadow: 10px 10px 0 var(--color-azul-noche);
-
-    font-family: var(--fuente-textos);
-    text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background-color: var(--color-crema);
+  text-align: center;
 }
-
-
 
 .tabla-tarifas thead {
-    background-color: var(--color-naranja-cicla);
-    color: var(--color-crema);
+  background-color: var(--color-naranja-cicla);
+  color: var(--color-crema);
 }
 
 .tabla-tarifas th {
-    padding: 1.5rem 1rem;
-    font-family: var(--fuente-titulos);
-    font-weight: 800;
-    text-transform: uppercase;
-    border: 2px solid var(--color-azul-noche);
+  padding: 1.5rem 1rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid var(--color-azul-noche);
 }
-
 
 .tabla-tarifas td {
-    padding: 1.4rem 1rem;
-    border: 2px solid var(--color-azul-noche);
-    font-weight: 600;
-    color: var(--color-azul-noche);
+  padding: 1.4rem 1rem;
+  border: 2px solid var(--color-azul-noche);
+  font-weight: 600;
+  color: var(--color-azul-noche);
 }
 
-
-
 .tabla-tarifas tbody tr:hover {
-    background-color: var(--color-naranja-pedal);
+  background-color: var(--color-naranja-pedal);
 }
 
 .tabla-tarifas tbody td:first-child {
-    font-family: var(--fuente-titulos);
-    font-weight: 800;
-}
-
-
-.tabla-rutas th {
-    background-color: var(--color-naranja-cicla);
-}
-
-.tabla-rutas {
-    box-shadow: 10px 10px 0 var(--color-azul-noche);
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
 }
 
 
 .card-info {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 
-    width: 100%;
-    max-width: 1000px;
-    padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
 
-    background-color: var(--color-crema);
-    border: 2px solid var(--color-azul-noche);
-    box-shadow: 10px 10px 0 var(--color-azul-noche);
+  background-color: var(--color-crema);
 }
-
-
 
 .info-icon {
-    min-width: 100px;
-    height: 100px;
+  min-width: 100px;
+  height: 100px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-color: var(--color-crema);
-    border: 2px solid var(--color-azul-noche);
-    box-shadow: 5px 5px 0 var(--color-azul-noche);
+  background-color: var(--color-crema);
+  border: 2px solid var(--color-azul-noche);
+  box-shadow: 5px 5px 0 var(--color-azul-noche);
 
-    font-size: 3rem;
+  font-size: 3rem;
 }
-
 
 .info-contenido h3 {
-    font-family: display;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  text-transform: uppercase;
+  margin: 0;
 }
 
-.btn-info {
-    display: inline-block;
-    padding: 20px;
-    margin-left: 300px;
-    font-family: display;
-    background-color: var(--color-naranja-pedal);
-    color: black;
-    border: 2px solid var(--color-azul-noche);
-    text-decoration: none;
-}
 
+/* ==========================================================================
+   11. RESERVAS: HORARIOS Y FORMULARIO
+   ========================================================================== */
+
+/* --- Horarios --- */
 .horarios-section {
-    display: flex;
-    justify-content: center;
-    padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1.5rem;
 }
 
 .card-horarios {
-    width: 100%;
-    max-width: 900px;
-    padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
 
-    background-color: var(--color-naranja-pedal);
-    border: 2px solid var(--color-azul-noche);
-    box-shadow: 10px 10px 0 var(--color-azul-noche);
+  background-color: var(--color-naranja-pedal);
 }
 
 .card-horarios dl {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 0;
 }
 
 .card-horarios dt {
-    font-family: display;
-    font-size: 1.5rem;
-    color: var(--color-azul-noche);
+  font-family: display;
+  font-size: 1.5rem;
+  color: var(--color-azul-noche);
 }
 
 .card-horarios dd {
-    margin: 0.5rem 0 0;
-    font-weight: 600;
+  margin: 0.5rem 0 0;
+  font-weight: 600;
 }
 
+/* --- Formulario --- */
 .formulario-section {
-    padding: 4rem 1.5rem;
-    background-color: var(--color-naranja-acento);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 20px;
-}
-
-.titulo-formulario {
-    font-family: display;
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    text-align: center;
-    color: var(--color-azul-noche);
+  padding: 4rem 1.5rem;
+  gap: 3rem;
+  background-color: var(--color-naranja-acento);
 }
 
 .formulario-reserva {
-    width: 100%;
-    max-width: 850px;
+  width: 100%;
+  max-width: 850px;
 
-    padding: 2rem;
+  padding: 2rem;
 
-    background-color: var(--color-crema);
-    border: 2px solid var(--color-azul-noche);
-    box-shadow: 12px 12px 0 var(--color-azul-noche);
+  background-color: var(--color-crema);
+  border: 2px solid var(--color-azul-noche);
+  box-shadow: 12px 12px 0 var(--color-azul-noche);
 
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .formulario-reserva fieldset {
-    border: 2px solid var(--color-azul-noche);
-    padding: 1.5rem;
+  border: 2px solid var(--color-azul-noche);
+  padding: 1.5rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .formulario-reserva legend {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 
-    background-color: var(--color-naranja-pedal);
-    border: 2px solid var(--color-azul-noche);
+  background-color: var(--color-naranja-pedal);
+  border: 2px solid var(--color-azul-noche);
 
-    font-family: display;
-    font-size: 1.5rem;
+  font-family: display;
+  font-size: 1.5rem;
 }
 
 .formulario-reserva label {
-    font-weight: 700;
-    color: var(--color-azul-noche);
+  font-weight: 700;
+  color: var(--color-azul-noche);
 }
 
 .formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
 .formulario-reserva select,
 .formulario-reserva textarea {
-    width: 100%;
-    padding: 1rem;
+  width: 100%;
+  padding: 1rem;
 
-    background-color: #F8F6F0;
-    border: 2px solid var(--color-azul-noche);
-    border-radius: 0;
+  background-color: #f8f6f0;
+  border: 2px solid var(--color-azul-noche);
+  border-radius: 0;
 
-    font-family: var(--fuente-textos);
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .formulario-reserva input:focus,
 .formulario-reserva select:focus,
 .formulario-reserva textarea:focus {
-    outline: 3px solid var(--color-naranja-pedal);
-    border-color: var(--color-azul-noche);
-    box-shadow: none;
+  outline: 3px solid var(--color-naranja-pedal);
+  border-color: var(--color-azul-noche);
+  box-shadow: none;
 }
 
 .formulario-reserva input[type="radio"],
 .formulario-reserva input[type="checkbox"] {
-    accent-color: var(--color-verde-ruta);
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.formulario-reserva button {
-    padding: 1.2rem;
-    background-color: var(--color-naranja-cicla);
-
-    border: 2px solid var(--color-azul-noche);
-    box-shadow: 7px 7px 0 var(--color-azul-noche);
-
-    font-family: display;
-    font-size: 1.5rem;
-    font-weight: bold;
-
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.formulario-reserva button:hover {
-    transform: translate(4px, 4px);
-    box-shadow: 3px 3px 0 var(--color-azul-noche);
-    background-color: var(--color-naranja-pedal);
-}
-
-.hero-reservas h1{
-    font-family: display;
-    
-    ;
+  accent-color: var(--color-verde-ruta);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }
 
 
+/* ==========================================================================
+   12. COMPONENTES GLOBALES: WHATSAPP FLOTANTE Y PIE DE PÁGINA
+   ========================================================================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  background-color: var(--color-verde-ruta);
+  color: var(--color-crema);
+
+  border: 2px solid var(--color-azul-noche);
+  box-shadow: 6px 6px 0 var(--color-azul-noche);
+
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: black;
+  color: var(--color-crema);
+  margin-top: 20px;
+}
+
+.footer-display a {
+  text-decoration: none;
+  color: var(--color-naranja-pedal);
+}

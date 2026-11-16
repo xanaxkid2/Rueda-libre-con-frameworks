@@ -156,3 +156,10 @@ y no hereda : --color-naranja-pedal: #F7B97C;
 El selector #menu a tiene mayor especificidad que .active.
 Por eso, aunque el enlace tenga la clase activo, 
 el navegador prioriza el color gris del selector #menu a.
+
+--resumen Semana 1----
+
+se aplicaron estilos a todos los componentes y contenedores de la web
+se corrigieron los margenes , posicion , padding , tamaño y forma de 
+varios elementos , se le dio el "Sello de marca " buscado por el cliente.
+se puede mejorar el orden y algunos margenes que quedaron extraños.
