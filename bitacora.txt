@@ -186,3 +186,16 @@ donde lo requeria .
 
 sin embargo es un framework que agiliza en gran parte la contruccion
 y diseño web.
+
+-- boton en bootstrap vs tailwind ---
+
+en bootstrap cree una etiqueta button y le agregre la clase resrvada btn btn-warning btn-lg
+lo que comvirtio el elemento base en un boton con varios estilos precargados.
+
+en tailwind utilize la clase de links (a) , con las sigientes clases: 
+inline-block bg-[#f7b97c] text-[#172a3a]
+border-4 border-[#172a3a] px-8 py-4
+text-xl font-black uppercase
+shadow-[7px_7px_0px_#ffffff] -> la diferencia es que tailwind no tiene
+ componente ya echos por lo que tube que yo mismo indicar borde , color , tipo de texto
+ tipo ,sombra y color de texto.
