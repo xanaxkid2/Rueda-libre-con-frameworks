@@ -1,117 +1,138 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rueda Libre / Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rueda Libre / Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
+  <body>
 
-<body>
+     <nav class="nav-bar">
+          <ul id="menu">
+            <li>
+              <a class="activo" href="/index.html">Inicio</a>
+            </li>
 
-  <header>
+            <li>
+              <a href="/paginas/tarifas.html">Tarifas y Rutas</a>
+            </li>
 
-   <nav>
-            <ul id="menu">
-                <li>
-                    <a class="activo" href="/index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a   href="/paginas/tarifas.html">Tarifas y Rutas</a>
-                </li>
-
-                <li>
-                    <a class="btn-reservar" href="/paginas/reservas.html">Reserva ya!</a>
-                </li>
-            </ul>
+            <li>
+              <a class="btn-reservar" href="/paginas/reservas.html"
+                >Reserva ya!</a
+              >
+            </li>
+          </ul>
         </nav>
 
-    <h1>Rueda Libre | Alquiler de bicicletas en Medellín</h1>
+    <header class="hero">
+    </header>
 
-    <p>
-      Descubre la ciudad sobre dos ruedas y disfruta de la libertad de
-      explorar nuevos caminos. ¡Tu próxima aventura comienza aquí!
-    </p>
+    <main>
 
-  </header>
+       <div class="cards-display-titles">
+           <h3>Quienes somos</h3>
 
-  <main>
+        </div>
 
-    <section>
-      <div>
-        <h3>Quienes somos</h3>
-      </div>
-    </section>
+      <section class="cards-display-quienes">
+        <div class="card-mascota">
+          <img src="/img/mascota.png" alt="mascota ruedalibre">
+        </div>
 
-    <section>
+        <div class="card-quienes">
+          
+          <p>
+            En Rueda Libre creemos que cada recorrido es una oportunidad para
+            descubrir algo nuevo. Somos un servicio de alquiler de bicicletas en
+            Medellín, comprometido con ofrecer experiencias cómodas, accesibles
+            y sostenibles. Queremos que explores la ciudad a tu ritmo, disfrutes
+            del camino y vivas la libertad sobre dos ruedas.
+          </p>
+        </div>
 
-      <article>
+        
+      </section>
 
+      <div class="cards-display-titles">
         <h3>Nuestros servicios</h3>
 
-        <h5>Alquilar</h5>
+      </div>
 
-        <p>Descubre la libertad de recorrer la ciudad a tu propio ritmo con Rueda Libre. Elige tu bicicleta ideal,
-          <span>alquílala fácilmente </span>y disfruta de cada recorrido sobre dos ruedas. 🚴
-        </p>
+      <section class="cards-display">
+    
+        <div class="cards-container">
+          <article class="card">
+            <img
+              src="/img/cicla.png"
+              alt="Bicicleta de la flota"
+              class="card-img"
+            />
 
-        <h5>tours guiados </h5>
+            <h5>Alquilar</h5>
 
-        <p>Explora nuevos caminos y descubre lugares increíbles con nuestros tours guiados. Vive experiencias únicas
-          sobre dos ruedas, <span>acompañado de guías</span> que harán de cada recorrido una aventura inolvidable.</p>
+            <p>
+              Descubre la libertad de recorrer la ciudad a tu propio ritmo con
+              Rueda Libre. Elige tu bicicleta ideal,
+              <span>alquílala fácilmente</span> y disfruta.
+            
+            </p>
 
-        <a href="/paginas/tarifas.html#Recorridos">Ver recorridos</a>
+            <button class="btn-cards">Alquilar ahora</button>
+          </article>
 
-      </article>
+          <article class="card">
+            <img src="/img/rutas.png" alt="Rutas y tours" class="card-img" />
 
-    </section>
+            <h5>Tours guiados</h5>
 
-    <section>
+            <p>
+              Explora nuevos caminos y descubre lugares increíbles con nuestros
+              tours guiados , <span>acompañado de guías</span> que harán de cada recorrido una
+              aventura inolvidable.
+            </p>
 
-      <article>
-        <h3>Como Alquilar</h3>
-      </article>
+            <button class="btn-cards">Ver Recoridos</button>
+          </article>
+        </div>
+      </section>
 
-    </section>
+      <section class="cards-display">
+        <article>
+          <h3>Como Alquilar</h3>
+        </article>
+      </section>
 
-    <section>
+      <section class="cards-display">
+        <article>
+          <h3 id="Encuentranos">Encuentranos</h3>
+          <a
+        href="https://www.google.com/maps/@6.2246028,-75.5782234,17z?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+        >Donde Estamos</a
+      >
+      <a href="mailto:hola@ruedalibre.example">Email de contacto</a>
+      <a href="#Encuentranos">Encuentranos</a>
 
-      <article>
+        </article>
+      </section>
 
-        <h3 id="Encuentranos">Encuentranos</h3>
+      
+    </main>
 
-      </article>
+    <footer class="footer-display">
+      <p>RUEDA-LIBRE</p>
+      <a href="mailto:hola@ruedalibre.example">CONTACTANOS</a>
+      <p>2026 @</p>
+    </footer>
 
-    </section>
-
-    <img src="/img/hero.png" alt="portada">
-    <img src="/img/cicla.png" alt="bicicleta de la flota">
-    <img src="/img/rutas.png" alt="Rutas y tours">
-
-    <a href="https://www.google.com/maps/@6.2246028,-75.5782234,17z?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D"
-      target="_blank">Donde Estamos</a>
-    <a href="mailto:hola@ruedalibre.example">Email de contacto</a>
-    <a href="#Encuentranos">Encuentranos</a>
-
-
-
-  </main>
-
-  <footer>
-
-    <p>RUEDA-LIBRE</p>
-    <a href="mailto:hola@ruedalibre.example">CONTACTANOS</a>
-    <P>2026 @ </P>
-
-  </footer>
-
-</body>
-
+  </body>
 </html>

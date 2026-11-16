@@ -15,30 +15,24 @@
 
 <body>
 
-    <header>
+    <nav>
+        <ul id="menu">
+            <li>
+                <a href="/index.html">Inicio</a>
+            </li>
 
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a  href="/index.html">Inicio</a>
-                </li>
+            <li>
+                <a class="activo" href="/paginas/tarifas.html">Tarifas y Rutas</a>
+            </li>
 
-                <li>
-                    <a  class="activo" href="/paginas/tarifas.html">Tarifas y Rutas</a>
-                </li>
+            <li>
+                <a class="btn-reservar" href="/paginas/reservas.html">Reserva ya!</a>
+            </li>
+        </ul>
+    </nav>
 
-                <li>
-                    <a  class="btn-reservar" href="/paginas/reservas.html">Reserva ya!</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="hero-tarifas">
 
-        <img src="/img/hero.png" alt="logo Rueda-libre">
-
-        <h1>CONOCE NUESTRAS TARIFAS</h1>
-
-        <p>Conoce nuestras tarifas y encuentra el plan ideal para disfrutar de Rueda Libre. Ofrecemos precios accesibles
-            y opciones flexibles para que cada recorrido se adapte a tu aventura.</p>
 
     </header>
 
@@ -46,9 +40,13 @@
 
     <main>
 
-        <section>
+        <div class="cards-display-titles">
+            <h3>PRECIOS</h3>
+        </div>
 
-            <table border="1">
+        <section class="cards-display">
+
+            <table class="tabla-tarifas">
                 <thead>
                     <tr>
                         <th>Tipo de bicicleta</th>
@@ -82,20 +80,38 @@
                 </tbody>
             </table>
 
-            <article>
 
-                <h5>para tener en cuenta</h5>
-                <p>todos los valores icluyen casco , candado y botella de agua </p>
-                <a href="/paginas/reservas.html">Reserva ahora</a>
+            <article class="card-info">
+                <div class="info-icon">
+                    <span>(;</span>
+                </div>
 
+                <div class="info-contenido">
+                    <h3>¡PEDALEA SIN PREOCUPACIONES!</h3>
 
+                    <p>
+                        Todos nuestros alquileres incluyen casco, candado
+                        y botella de agua para que disfrutes tu recorrido
+                        con total tranquilidad.
+                    </p>
+
+                    <a class="btn-info" href="/paginas/reservas.html">
+                        RESERVA AHORA 
+                    </a>
+                </div>
             </article>
+
 
         </section>
 
-        <section>
+        <div class="cards-display-titles">
+            <h3>RUTAS</h3>
+        </div>
 
-            <table border="1" id="Recorridos">
+
+        <section class=cards-display seccion-tablas">
+
+            <table border="1" class="tabla-tarifas tabla-rutas">
                 <thead>
                     <tr>
                         <th>Recorrido</th>
@@ -133,21 +149,31 @@
                 </tbody>
             </table>
 
-            <aside>
-                <h5>para tener en cuenta</h5>
 
-                <p>Recuerda llevar ropa comoda , hidratacion adecuada , protector solar y gafas y tu <span>documento de
-                        identidad </span></p>
+            <aside class="card-info ">
+                <div class="info-icon">
+                    <span> !!! </span>
+                </div>
 
-                <a href="/paginas/reservas.html">Reserva ahora</a>
+                <div class="info-contenido">
+                    <h3>¡PREPARA TU AVENTURA!</h3>
 
+                    <p>
+                        Recuerda llevar ropa cómoda, hidratación adecuada,
+                        protector solar, gafas y tu documento de identidad.
+                    </p>
+
+                    <a class="btn-info" href="/paginas/reservas.html">
+                        RESERVA TU RUTA 
+                    </a>
+                </div>
             </aside>
 
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footer-display">
 
         <p>RUEDA-LIBRE</p>
         <a href="mailto:hola@ruedalibre.example">CONTACTANOS</a>
